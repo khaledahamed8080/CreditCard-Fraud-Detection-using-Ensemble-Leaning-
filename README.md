@@ -14,7 +14,7 @@
 </div>
 
 # <div align="center">Credit card fraud detection using predictive models</div>
-<div align="center"><img src ="https://github.com/khaledahamed8080/Credit-card-fraud-detection-using-ensemble-learning-predictive-models/blob/main/output/creditcardfraud.gif?raw=true"></div>
+<div align="center"><img src ="https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/output/creditcardfraud.gif?raw=true"></div>
 
 ## Overview:
 Credit card fraud is when someone uses another person's credit card or account information to make unauthorized purchases or access funds through cash advances. Credit card fraud doesn’t just happen online; it happens in brick-and-mortar stores, too. As a business owner, you can avoid serious headaches – and unwanted publicity – by recognizing potentially fraudulent use of credit cards in your payment environment.
