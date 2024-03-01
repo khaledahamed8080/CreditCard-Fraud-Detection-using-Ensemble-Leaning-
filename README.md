@@ -1,18 +1,3 @@
-<div align="center">
-  
-[1]: https://github.com/Pradnya1208
-[2]: https://www.linkedin.com/in/pradnya-patil-b049161ba/
-[3]: https://public.tableau.com/app/profile/pradnya.patil3254#!/
-[4]: https://twitter.com/Pradnya1208
-
-
-[![github](https://raw.githubusercontent.com/Pradnya1208/Telecom-Customer-Churn-prediction/c292abd3f9cc647a7edc0061193f1523e9c05e1f/icons/git.svg)][1]
-[![linkedin](https://raw.githubusercontent.com/Pradnya1208/Telecom-Customer-Churn-prediction/9f5c4a255972275ced549ea6e34ef35019166944/icons/iconmonstr-linkedin-5.svg)][2]
-[![tableau](https://raw.githubusercontent.com/Pradnya1208/Telecom-Customer-Churn-prediction/e257c5d6cf02f13072429935b0828525c601414f/icons/icons8-tableau-software%20(1).svg)][3]
-[![twitter](https://raw.githubusercontent.com/Pradnya1208/Telecom-Customer-Churn-prediction/c9f9c5dc4e24eff0143b3056708d24650cbccdde/icons/iconmonstr-twitter-5.svg)][4]
-
-</div>
-
 # <div align="center">Credit card fraud detection using predictive models</div>
 <div align="center"><img src ="https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/output/creditcardfraud.gif?raw=true"></div>
 
@@ -46,23 +31,23 @@ Fraudulent transactions have a distribution more even than valid transactions - 
 Let's look into more details to the time distribution of both classes transaction, as well as to aggregated values of transaction count and amount, per hour. We assume (based on observation of the time distribution of transactions) that the time unit is second.
 <br>
 Plot in red color is for Fraudulent transactions.
-<img src="https://github.com/khaledahamed8080/Credit-card-fraud-detection-using-ensemble-learning-predictive-models/blob/main/output/eda2.PNG?raw=true">
-<img src="https://github.com/khaledahamed8080/Credit-card-fraud-detection-using-ensemble-learning-predictive-models/blob/main/output/eda3.PNG?raw=true">
-<img src="https://github.com/khaledahamed8080/Credit-card-fraud-detection-using-ensemble-learning-predictive-models/blob/main/output/eda4.PNG?raw=true">
-<img src="https://github.com/khaledahamed8080/Credit-card-fraud-detection-using-ensemble-learning-predictive-models/blob/main/output/eda5.PNG?raw=true">
-<img src="https://github.com/khaledahamed8080/Credit-card-fraud-detection-using-ensemble-learning-predictive-models/blob/main/output/eda6.PNG?raw=true">
-<img src="https://github.com/khaledahamed8080/Credit-card-fraud-detection-using-ensemble-learning-predictive-models/blob/main/output/eda7.PNG?raw=true">
+<img src="https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/output/eda2.PNG?raw=true">
+<img src="https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/output/eda3.PNG?raw=true">
+<img src="https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/output/eda4.PNG?raw=true">
+<img src="https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/output/eda5.PNG?raw=true">
+<img src="https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/output/eda6.PNG?raw=true">
+<img src="https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/output/eda7.PNG?raw=true">
 
 #### Transaction Amount:
-<img src="https://github.com/khaledahamed8080/Credit-card-fraud-detection-using-ensemble-learning-predictive-models/blob/main/output/eda8.PNG?raw=true">
+<img src="https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/output/eda8.PNG?raw=true">
 
 The real transaction have a larger mean value, larger Q1, smaller Q3 and Q4 and larger outliers; fraudulent transactions have a smaller Q1 and mean, larger Q4 and smaller outliers.
 
 Let's plot the fraudulent transactions (amount) against time. The time is shown is seconds from the start of the time period (totaly 48h, over 2 days).
-<img src="https://github.com/khaledahamed8080/Credit-card-fraud-detection-using-ensemble-learning-predictive-models/blob/main/output/eda9.PNG?raw=true">
+<img src="https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/output/eda9.PNG?raw=true">
 
 #### Feature density plots:
-Checkout the [Notebook](https://github.com/khaledahamed8080/Credit-card-fraud-detection-using-ensemble-learning-predictive-models/blob/main/credit-card-fraud-detection-using%20ensemble%20learning%20(predictive-models).ipynb) for mor details.## Machine Learning Model Evaluation and Prediction:
+Checkout the [Notebook](https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/credit-card-fraud-detection-using%20ensemble%20learning%20(predictive-models).ipynb) for mor details.## Machine Learning Model Evaluation and Prediction:
 ### Random Forest:
 ```
 clf = RandomForestClassifier(n_jobs=NO_JOBS, 
@@ -72,10 +57,10 @@ clf = RandomForestClassifier(n_jobs=NO_JOBS,
                              verbose=False)
 ```
 **Feature Importances**: <br>
-<img src="https://github.com/khaledahamed8080/Credit-card-fraud-detection-using-ensemble-learning-predictive-models/blob/main/output/features.PNG?raw=true">
+<img src="https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/output/features.PNG?raw=true">
 
 **Confusion Matrix**: <br>
-<img src="https://github.com/khaledahamed8080/Credit-card-fraud-detection-using-ensemble-learning-predictive-models/blob/main/output/cm.PNG?raw=true">
+<img src="https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/output/cm.PNG?raw=true">
 
 ```
 roc_auc_score(valid_df[target].values, preds)
@@ -88,7 +73,7 @@ clf = AdaBoostClassifier(random_state=RANDOM_STATE,
                          learning_rate=0.8,
                              n_estimators=NUM_ESTIMATORS)
 ```
-<img src="https://github.com/khaledahamed8080/Credit-card-fraud-detection-using-ensemble-learning-predictive-models/blob/main/output/cm_ada.png?raw=true">
+<img src="https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/output/cm_ada.png?raw=true">
 ```
 roc_auc_score(valid_df[target].values, preds)
 = 0.8332343604519027
@@ -106,7 +91,7 @@ clf = CatBoostClassifier(iterations=500,
                              metric_period = VERBOSE_EVAL,
                              od_wait=100)
 ```
-<img src ="https://github.com/khaledahamed8080/Credit-card-fraud-detection-using-ensemble-learning-predictive-models/blob/main/output/cm_catboost.png?raw=true">
+<img src ="https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/output/cm_catboost.png?raw=true">
 
 ```
 roc_auc_score(valid_df[target].values, preds)
@@ -164,7 +149,7 @@ params = {
 roc_auc_score(test_df[target].values, preds)
 = 0.9473337202349548
 ```
-Check out the complete implementation here: [Notebook](https://github.com/Pradnya1208/Credit-card-fraud-detection-using-ensemble-learning-predictive-models/blob/main/credit-card-fraud-detection-using%20ensemble%20learning%20(predictive-models).ipynb)
+Check out the complete implementation here: [Notebook](https://github.com/khaledahamed8080/CreditCard-Fraud-Detection-using-Ensemble-Leaning-/blob/main/credit-card-fraud-detection-using%20ensemble%20learning%20(predictive-models).ipynb)
 
 
 ### Lessons Learned
@@ -182,30 +167,3 @@ If you have any feedback, please reach out at khaledahamed8080@gmail.com
 I am an AI  & ML Enthusiast
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[1]: https://github.com/Pradnya1208
-[2]: https://www.linkedin.com/in/pradnya-patil-b049161ba/
-[3]: https://public.tableau.com/app/profile/pradnya.patil3254#!/
-[4]: https://twitter.com/Pradnya1208
-
-
-[![github](https://raw.githubusercontent.com/Pradnya1208/Telecom-Customer-Churn-prediction/c292abd3f9cc647a7edc0061193f1523e9c05e1f/icons/git.svg)][1]
-[![linkedin](https://raw.githubusercontent.com/Pradnya1208/Telecom-Customer-Churn-prediction/9f5c4a255972275ced549ea6e34ef35019166944/icons/iconmonstr-linkedin-5.svg)][2]
-[![tableau](https://raw.githubusercontent.com/Pradnya1208/Telecom-Customer-Churn-prediction/e257c5d6cf02f13072429935b0828525c601414f/icons/icons8-tableau-software%20(1).svg)][3]
-[![twitter](https://raw.githubusercontent.com/Pradnya1208/Telecom-Customer-Churn-prediction/c9f9c5dc4e24eff0143b3056708d24650cbccdde/icons/iconmonstr-twitter-5.svg)][4]
